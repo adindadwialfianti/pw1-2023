@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas luas dan keliling lingkaran</title>
+</head>
+<body>
+    <h1>luas dan keliling lingkaran</h1>
+    <form>
+        <label for="jari jari"> masukan jari jari: </label>
+        <input type="number" id="jari jari" onchange="lingkran()">    
+    </form>
+    <p>luas lingkaran: <span id="luas"></span> </p>
+    <p>keliling lingkaran: <span id="keliling"></span> </p>
+    <script>
+        function lingkran() {
+            let jarijari= parseFloat(document.getElementById("jari jari").value) || 0;
+            console.log("jari jari" + luas)
+            console.log("keliling" + keliling)
+            let luaslingkaran= Math.PI * jarijari * jarijari;
+            let kelilinglingkaran= Math.PI * jarijari * jarijari;
+            document.getElementById("luas").innerHTML=luaslingkaran.toFixed(2);
+            document.getElementById("keliling").innerHTML=kelilinglingkaran.toFixed(2);
+        }
+    </script>
+</body>
+</html>
