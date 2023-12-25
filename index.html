@@ -1,79 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 4px;
+    
+}
+
+button {
+    margin-top: 10px;
+}
+
+.container {
+    text-align: center;
+    border-radius: 30px;
+    height: 300px;
+    width: 350px;
+    background-color: peachpuff;
+    
+}
+
+    </style>
 <head>
-    <title>Portofolio saya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   
 </head>
 <body>
-    <header>
-    <h1>Selamat datang!</h1>  
-    </header>
+       <div class="container">
+            <section>
+                <h1>login and register</h1>
+                <div id="textBox">
+                <!--your text message-->
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                    <br> <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                    
+                    <div class="button">
+                    <button type="button" onclick="authenticate()">Login</button>                   
+                    <button type="button" onclick="authenticate()">register</button>
+                    </div>
+                </form>
+               </div>
+            </section>
+       </div>
+    </div>
 
-    <main>
-        <section>
-            <h2>tentang saya</h2>
-            <p> saya adalah seorang mahasiswa yang sedang belajar coding.
-                saya meiliki minat dalam pengembangan web.</p>
-        </section>
-
-        <section>
-        <h2>Pengalaman</h2>
-        <table>
-            <tr>
-                <th>Tahun</th>
-                <th>Jabatan</th>
-                <th>Organisasi</th>
-                <th>Deskripsi</th>
-            </tr>
-            <tr>
-                <td>2018</td>
-                <td>bendahara rohis</td>
-                <td>      rohis</td>
-                <td>bendahara rohis</td>
-            </tr>
-            <tr>
-                <td>2021</td>
-                <td>anggota pmr</td>
-                <td>pmr</td>
-                <td>anggota pmr</td>
-            </tr>
-            <tr>
-                
-        </table>
-  
-        </section>
-
-        <section>
-            <h2>pendidikan</h2>
-            <ul>
-                <li> sekolah tinggi teknologi nurul fikri</li>
-                <li>SMA madani</li>
-            </ul>
-        </section>
-
-    <section>
-        <h2>hubungi saya</h2>
-        <form action="">
-            <label>nama:</label>
-            <input type="text">
-            <br><br>
-            <label>email</label>
-            <input type="email">
-            <br><br>
-
-            <label>pesan</label>
-            <textarea></textarea>
-            <br><br>
-
-        </form>
-    </section>
-
-    <section>
-        <h2>video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zid2uAjDn00?si=4GX7Xlet_dYHaaLC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
-    </main>
-
-    <footer>
-        <p>2023 adinda</p>
-    </footer>
+    <script src="auth.js"></script>
 </body>
-</html>k
+</html>
